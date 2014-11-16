@@ -356,7 +356,6 @@ bool CSshConnect::SendCmdAndReceive( string strCmd, string & strReceive, string 
         return false;
     }
         
-//    while( LIBSSH2_ERROR_EAGAIN == ( m_rc = libssh2_channel_exec( m_pChannel, strCmd.c_str() ) ) ) //some commands doesn't get executed for unknown reason
     while( LIBSSH2_ERROR_EAGAIN == ( m_rc = libssh2_channel_write(m_pChannel, strCmd.c_str(), strlen(strCmd.c_str())) ) )
     {
         WaitSocket(m_sock, m_pSession);
