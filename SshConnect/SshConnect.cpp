@@ -1,27 +1,3 @@
-//=============================================================================
-// Copyright (C) 2012 Sierra Wireless Inc. All rights reserved.
-//
-// File:                SshConnect.cpp
-//
-// Class(es):   CSshConnect
-//
-// Author(s):   
-//
-// Summary:             Wrapper class of libssh2 to connect, disconnect, send and receive information to remote SSH server
-//
-// Notes:               
-//
-//=============================================================================
-// Version   Date          Author  Change    Description
-//-----------------------------------------------------------------------------
-//   4.2.0   07-Nov-2014   B.L.    00000     Created class. To be used in BFT.
-//   4.2.0   07-Nov-2014   B.L.    00000     Added destructor. Minor modification to Disconnect().
-//   4.2.0   07-Nov-2014   B.L.    00000     Added CreateSocket() helper, SetConnectTimeout(). Adjusted spacing format.
-//   4.2.0   10-Nov-2014   B.L.    00000     Added m_sock and m_pSession checks in SendCmdAndReceive().
-//   4.2.0   14-Nov-2014   B.L.    00000     Added strStdError parameter to SendCmdAndReceive() for standard error messages.
-//   4.2.0   15-Nov-2014   B.L.    00000     Changed to use libssh2_channel_write() instead of libssh2_channel_exec() in SendCmdAndReceive(). Moved libssh2_channel_shell() from Connect() to SendCmdAndReceive(). Commented out stdout fprintf statements.
-//=============================================================================
-
 #include "stdafx.h"
 
 #include "SshConnect.h"
