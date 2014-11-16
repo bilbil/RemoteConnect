@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SshConnect", "SshConnect.vcproj", "{325DB55F-2CB4-48BD-8AD9-CD530FE79060}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestSshConnect", "..\TestSshConnect\TestSshConnect.vcproj", "{4B2F2AFF-EB1C-40ED-AFE9-65421F88EAEB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{325DB55F-2CB4-48BD-8AD9-CD530FE79060} = {325DB55F-2CB4-48BD-8AD9-CD530FE79060}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{325DB55F-2CB4-48BD-8AD9-CD530FE79060}.Debug|Win32.ActiveCfg = Debug|Win32
+		{325DB55F-2CB4-48BD-8AD9-CD530FE79060}.Debug|Win32.Build.0 = Debug|Win32
+		{325DB55F-2CB4-48BD-8AD9-CD530FE79060}.Release|Win32.ActiveCfg = Release|Win32
+		{325DB55F-2CB4-48BD-8AD9-CD530FE79060}.Release|Win32.Build.0 = Release|Win32
+		{4B2F2AFF-EB1C-40ED-AFE9-65421F88EAEB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B2F2AFF-EB1C-40ED-AFE9-65421F88EAEB}.Debug|Win32.Build.0 = Debug|Win32
+		{4B2F2AFF-EB1C-40ED-AFE9-65421F88EAEB}.Release|Win32.ActiveCfg = Release|Win32
+		{4B2F2AFF-EB1C-40ED-AFE9-65421F88EAEB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
